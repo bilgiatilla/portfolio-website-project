@@ -5,7 +5,7 @@ import heroRight from "../Assets/hero-right.png";
 function Header() {
   const { theme, toggleTheme, language, toggleLanguage } = useApp();
   const t = translations[language];
-
+  
   return (
     <div>
       <header className="flex flex-row h-auto lg:h-125">
@@ -15,13 +15,15 @@ function Header() {
           </h2>
 
           <button
-            onClick={toggleLanguage}
+            onClick={() => {
+              toggleLanguage();
+              langNotify();
+            }}
             type="button"
             className="absolute top-6 right-4 sm:right-6 lg:top-5 lg:right-10 font-bold text-[#FFF8DE] dark:text-[#ffbc42] text-[10px] sm:text-xs lg:text-sm hover:opacity-80 transition hover:cursor-pointer whitespace-nowrap"
           >
             {t.switchLanguage}
           </button>
-
           <div className="mt-12 sm:mt-14 lg:mt-8 h-full flex flex-col justify-start lg:justify-center">
             <div className="max-w-full lg:max-w-90 text-center lg:text-left">
               <p className="text-[#CBF281] dark:text-[#ffbc42] text-2xl sm:text-4xl lg:text-[56px] font-bold leading-[1.05]">
@@ -41,11 +43,19 @@ function Header() {
               </div>
 
               <div className="mt-5 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-                <a href="https://github.com/bilgiatilla" target="_blank" className="text-[#4731D3] dark:text-[#001f24] cursor-pointer bg-white inline-flex items-center justify-center gap-2 rounded-sm text-sm font-semibold transition-colors hover:bg-[#F5F5F5] hover:text-[#06B6D4] h-10 px-4">
+                <a
+                  href="https://github.com/bilgiatilla"
+                  target="_blank"
+                  className="text-[#4731D3] dark:text-[#001f24] cursor-pointer bg-white inline-flex items-center justify-center gap-2 rounded-sm text-sm font-semibold transition-colors hover:bg-[#F5F5F5] hover:text-[#06B6D4] h-10 px-4"
+                >
                   <i className="fa-brands fa-github"></i> Github
                 </a>
 
-                <a href="https://www.linkedin.com/in/atilla-bilgi/" target="_blank"  className="text-[#4731D3] dark:text-[#001f24] cursor-pointer bg-white inline-flex items-center justify-center gap-2 rounded-sm text-sm font-semibold transition-colors hover:bg-[#F5F5F5] hover:text-[#06B6D4] h-10 px-4">
+                <a
+                  href="https://www.linkedin.com/in/atilla-bilgi/"
+                  target="_blank"
+                  className="text-[#4731D3] dark:text-[#001f24] cursor-pointer bg-white inline-flex items-center justify-center gap-2 rounded-sm text-sm font-semibold transition-colors hover:bg-[#F5F5F5] hover:text-[#06B6D4] h-10 px-4"
+                >
                   <i className="fa-brands fa-linkedin-in"></i> LinkedIn
                 </a>
               </div>

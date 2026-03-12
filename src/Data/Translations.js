@@ -22,6 +22,7 @@ export const translations = {
     projectDesc:"A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
     message:"Send me a message!",
     question:"Got a question or proposal, or just want to say hello? Go ahead.",
+    themeChange:"Theme Changed!",
   },
   tr: {
     switchLanguage: "SWITCH TO ENGLISH",
@@ -46,5 +47,6 @@ export const translations = {
     projectDesc:"Kullanıcıların hangi çerezleri kabul edip hangilerini reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir ve kurulumu minimal bir çerez eklentisidir. Vanilla JS, SCSS ve Parcel Bundler kullanılarak geliştirilmiştir. NPM paketi olarak kullanılabilir ve Git deposu sayesinde kodun ve temaların her türlü özelleştirilmesi mümkündür.",
     message:"Bana bir mesaj gönder!",
     question:"Bir sorunuz ya da bir teklifiniz mi var, yoksa sadece merhaba demek mi istiyorsunuz? Çekinmeden yazın.",
+    themeChange:"Tema Değişti!",
   },
 };
