@@ -2,16 +2,16 @@ import profileImg from "../Assets/profile.png";
 
 function Profile() {
   return (
-    <section className="w-full bg-[#4731D3] px-6 py-6 md:px-8 lg:px-10 lg:py-8">
+    <section className="w-full bg-[#4731D3] dark:bg-[#001f24] px-6 py-6 md:px-8 lg:px-10 lg:py-8">
       <div className="mx-auto max-w-5xl">
-        <h2 className="mb-10 text-4xl font-bold text-[#CBF281] md:mb-12 md:text-5xl">
+        <h2 className="mb-10 text-4xl font-bold text-[#CBF281] dark:text-[#ffbc42] md:mb-12 md:text-5xl">
           Profile
         </h2>
 
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1.1fr_auto_1.2fr] lg:items-start">
           {/* Basic Info */}
           <div className="text-white">
-            <h3 className="mb-6 text-2xl font-semibold text-[#CBF281]">
+            <h3 className="mb-6 text-2xl font-semibold text-[#CBF281] dark:text-[#ffbc42]">
               Basic Information
             </h3>
 
@@ -45,7 +45,7 @@ function Profile() {
             />
           </div>
           <div className="text-white">
-            <h3 className="mb-6 text-2xl font-semibold text-[#CBF281]">
+            <h3 className="mb-6 text-2xl font-semibold text-[#CBF281] dark:text-[#ffbc42]">
               About Me
             </h3>
 

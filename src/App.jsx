@@ -7,7 +7,7 @@ import Footer from "./Components/Footer.jsx"
 function App() {
 
   return (
-      <div>
+      <div className="bg-[#F9F9F9] dark:bg-[#001f24]">
         <Header />
         <Skills />
         <Profile />
