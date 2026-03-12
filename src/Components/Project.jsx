@@ -1,13 +1,18 @@
 import witImg from "../Assets/project-1.png";
 import journeyImg from "../Assets/project-2.png";
+import { useApp } from "../Context/AppContext";
+import { translations } from "../Data/Translations";
 
 function Project() {
+  const {language} = useApp();
+  const t = translations[language];
+
   const projects = [
     {
       title: "Workintech",
       image: witImg,
       description:
-        "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+        t.projectDesc,
       tags: ["react", "redux", "vercel"],
       site: "#",
       github: "#",
@@ -16,7 +21,7 @@ function Project() {
       title: "Journey",
       image: journeyImg,
       description:
-        "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+        t.projectDesc,
       tags: ["react", "redux", "vercel"],
       site: "#",
       github: "#",
@@ -27,7 +32,7 @@ function Project() {
     <section className="w-full bg-[#CBF281] dark:bg-[#0f4539] px-6 py-10 md:px-10 lg:px-16">
       <div className="mx-auto max-w-5xl">
         <h2 className="mb-8 text-3xl font-bold text-[#4832D3] dark:text-[#ffbc42] md:text-4xl">
-          Projects
+          {t.project}
         </h2>
 
         <div className="space-y-6">

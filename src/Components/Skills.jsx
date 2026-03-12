@@ -4,6 +4,10 @@ import reduxLogo from "../Assets/Icons/redux-logo.png";
 import nodeLogo from "../Assets/Icons/node-logo.png";
 import vsCodeLogo from "../Assets/Icons/vs-code-logo.png";
 import figmaLogo from "../Assets/Icons/figma-logo.png";
+import { translations } from "../Data/Translations";
+import { useApp } from "../Context/AppContext";
+
+
 
 function Skills() {
    const skills = [
@@ -14,11 +18,14 @@ function Skills() {
     { name: "VS CODE", icon: vsCodeLogo },
     { name: "FIGMA", icon: figmaLogo },
   ];
+  const {language} = useApp();
+  const t = translations[language];
+
   return (
     <section className="w-full dark:bg-[#0f4539] px-6 py-12 md:px-12 lg:px-50">
       <div className="mx-auto max-w-6xl">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-[180px_1fr] md:items-start">
-          <h2 className="text-[#4832D3] dark:text-[#ffbc42] text-3xl font-bold">Skills</h2>
+          <h2 className="text-[#4832D3] dark:text-[#ffbc42] text-3xl font-bold">{t.skillsText}</h2>
           <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             {skills.map((skill) => (
               <li key={skill.name}

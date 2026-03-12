@@ -1,11 +1,18 @@
+import { useApp } from "../Context/AppContext";
+import { translations } from "../Data/Translations";
+
 function Footer() {
+
+    const {language} = useApp();
+    const t = translations[language];
+
   return (
     <footer className="bg-[#f5f5f5]]  py-8 px-6 text-center">
       <h2 className="text-[#4731D3] dark:text-[#ffbc42] text-3xl md:text-4xl font-bold mb-4">
-        Send me a message!
+        {t.message}
       </h2>
       <p className="max-w-xl mx-auto text-sm md:text-base text-[#120B39] dark:text-[#FFF8DE] mb-4 leading-relaxed">
-        Got a question or proposal, or just want to say hello? Go ahead.
+        {t.question}
       </p>
       <a
         href="mailto:atillabilgi.ab@gmail.com"
