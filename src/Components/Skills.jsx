@@ -22,7 +22,7 @@ function Skills() {
   const t = translations[language];
 
   return (
-    <section className="w-full dark:bg-[#0f4539] px-6 py-12 md:px-12 lg:px-50">
+    <section className="w-full dark:bg-[#0f4539] px-6 py-12 md:px-12 lg:px-50" data-cy="skills-section">
       <div className="mx-auto max-w-6xl">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-[180px_1fr] md:items-start">
           <h2 className="text-[#4832D3] dark:text-[#ffbc42] text-3xl font-bold">{t.skillsText}</h2>

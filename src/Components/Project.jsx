@@ -29,7 +29,7 @@ function Project() {
   ];
 
   return (
-    <section className="w-full bg-[#CBF281] dark:bg-[#0f4539] px-6 py-10 md:px-10 lg:px-16">
+    <section className="w-full bg-[#CBF281] dark:bg-[#0f4539] px-6 py-10 md:px-10 lg:px-16" data-cy="projects-section">
       <div className="mx-auto max-w-5xl">
         <h2 className="mb-8 text-3xl font-bold text-[#4832D3] dark:text-[#ffbc42] md:text-4xl">
           {t.project}
@@ -40,6 +40,7 @@ function Project() {
             <article
               key={project.title}
               className="overflow-hidden rounded-xl bg-white dark:bg-black shadow-lg"
+              data-cy="project-card"
             >
               <div className="grid grid-cols-1 md:grid-cols-[260px_1fr]">
                 <div className="h-55 w-full">

@@ -3,6 +3,7 @@ import Skills from "./Components/Skills.jsx"
 import Profile from "./Components/Profile.jsx"
 import Project from "./Components/Project.jsx"
 import Footer from "./Components/Footer.jsx"
+import RemoteUsers from "./Components/RemoteUsers.jsx";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Profile />
         <Project />
         <Footer />
+        <RemoteUsers />
       </div>
   )
 }

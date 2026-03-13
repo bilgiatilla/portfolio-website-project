@@ -17,9 +17,9 @@ function Header() {
           <button
             onClick={() => {
               toggleLanguage();
-              langNotify();
             }}
             type="button"
+            data-cy="lang-toggle"
             className="absolute top-6 right-4 sm:right-6 lg:top-5 lg:right-10 font-bold text-[#FFF8DE] dark:text-[#ffbc42] text-[10px] sm:text-xs lg:text-sm hover:opacity-80 transition hover:cursor-pointer whitespace-nowrap"
           >
             {t.switchLanguage}
@@ -91,7 +91,7 @@ function Header() {
               />
             </span>
 
-            <span className="text-[10px] sm:text-[11px] lg:text-sm font-bold text-[#4731D3] dark:text-[#ffbc42] text-center leading-tight whitespace-nowrap">
+            <span className="text-[10px] sm:text-[11px] lg:text-sm font-bold text-[#4731D3] dark:text-[#ffbc42] text-center leading-tight whitespace-nowrap" data-cy="theme-toggle">
               {t.darkMode}
             </span>
           </button>
