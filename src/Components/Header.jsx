@@ -8,7 +8,7 @@ function Header() {
   
   return (
     <div>
-      <header className="flex flex-row h-auto lg:h-125">
+      <header className="flex flex-row lg:flex-row h-auto lg:h-125">
         <section className="bg-[#4731D3] dark:bg-[#001f24] relative z-10 w-[82%] sm:w-[84%] lg:w-[74%] px-4 sm:px-6 md:px-10 lg:px-20 py-6 lg:py-6">
           <h2 className="text-[#CBF281] dark:text-[#ffbc42] text-lg sm:text-xl lg:text-2xl font-bold">
             Atilla Bilgi
@@ -20,12 +20,12 @@ function Header() {
             }}
             type="button"
             data-cy="lang-toggle"
-            className="absolute top-6 right-4 sm:right-6 lg:top-5 lg:right-10 font-bold text-[#FFF8DE] dark:text-[#ffbc42] text-[10px] sm:text-xs lg:text-sm hover:opacity-80 transition hover:cursor-pointer whitespace-nowrap"
+            className="absolute top-6 right-4 sm:right-6 lg:top-5 lg:right-10 font-bold text-[#CBF281] dark:text-[#ffbc42] text-[10px] sm:text-xs lg:text-sm hover:opacity-80 transition hover:cursor-pointer whitespace-nowrap"
           >
             {t.switchLanguage}
           </button>
           <div className="mt-12 sm:mt-14 lg:mt-8 h-full flex flex-col justify-start lg:justify-center">
-            <div className="max-w-full lg:max-w-90 text-center lg:text-left">
+            <div className="max-w-full lg:max-w-90 px-6 py-8 lg:text-left">
               <p className="text-[#CBF281] dark:text-[#ffbc42] text-2xl sm:text-4xl lg:text-[56px] font-bold leading-[1.05]">
                 {t.heroTitle}
               </p>
@@ -69,7 +69,7 @@ function Header() {
           </div>
         </section>
 
-        <section className="bg-[#CBF281] dark:bg-[#2f3b22] w-[18%] sm:w-[16%] lg:w-[26%] relative min-h-22.5 lg:h-125">
+        <section className="bg-[#4731D3] dark:bg-[#001f24] md:bg-[#CBF281] dark:md:bg-[#2f3b22] w-[18%] sm:w-[16%] lg:w-[26%] relative min-h-22.5 lg:h-125">
           <button
             onClick={toggleTheme}
             type="button"
@@ -77,7 +77,7 @@ function Header() {
             className="absolute top-6 left-1/2 -translate-x-1/2 sm:left-4 sm:translate-x-0 lg:top-5 lg:left-10 flex flex-col lg:flex-row items-center lg:items-center gap-1 lg:gap-3 hover:cursor-pointer"
           >
             <span
-              className="relative inline-flex h-5 w-10 items-center rounded-full transition-all duration-300"
+              className="size-0 relative inline-flex md:h-5 md:w-10 items-center rounded-full transition-all duration-300"
               style={{
                 backgroundColor: theme === "dark" ? "#001f24" : "#ffffff",
               }}
@@ -91,7 +91,7 @@ function Header() {
               />
             </span>
 
-            <span className="text-[10px] sm:text-[11px] lg:text-sm font-bold text-[#4731D3] dark:text-[#ffbc42] text-center leading-tight whitespace-nowrap" data-cy="theme-toggle">
+            <span className="text-[10px] sm:text-[11px] lg:text-sm font-bold text-[#CBF281] dark:text-[#ffbc42] md:text-[#4731D3] md:dark:text-[#ffbc42] text-center leading-tight whitespace-nowrap" data-cy="theme-toggle">
               {t.darkMode}
             </span>
           </button>
