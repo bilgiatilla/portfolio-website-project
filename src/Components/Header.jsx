@@ -20,11 +20,11 @@ function Header() {
             }}
             type="button"
             data-cy="lang-toggle"
-            className="absolute top-6 right-4 sm:right-6 lg:top-5 lg:right-10 font-bold text-[#CBF281] dark:text-[#ffbc42] text-[10px] sm:text-xs lg:text-sm hover:opacity-80 transition hover:cursor-pointer whitespace-nowrap"
+            className="absolute top-6.5 right-4 sm:right-6 lg:top-5 lg:right-10 font-bold text-[#CBF281] dark:text-[#ffbc42] text-[10px] sm:text-xs lg:text-sm hover:opacity-80 transition hover:cursor-pointer whitespace-nowrap"
           >
             {t.switchLanguage}
           </button>
-          <div className="mt-12 sm:mt-14 lg:mt-8 h-full flex flex-col justify-start lg:justify-center">
+          <div className="mt-12 sm:mt-14 lg:mt-8 h-full flex flex-col ml-20 justify-start lg:justify-center">
             <div className="max-w-full lg:max-w-90 px-6 py-8 lg:text-left">
               <p className="text-[#CBF281] dark:text-[#ffbc42] text-2xl sm:text-4xl lg:text-[56px] font-bold leading-[1.05]">
                 {t.heroTitle}
@@ -34,7 +34,7 @@ function Header() {
                 <img
                   src={heroRight}
                   alt="working-pic"
-                  className="w-28 sm:w-36 md:w-44 lg:hidden rounded-2xl object-cover"
+                  className="w-280 sm:w-36 md:w-44 lg:hidden rounded-2xl object-cover"
                 />
 
                 <p className="text-[#CBF281] dark:text-[#FFF8DE] text-sm sm:text-base lg:text-[16px] mt-0 lg:mt-3 leading-[1.45]">
